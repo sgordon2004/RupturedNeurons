@@ -1,0 +1,31 @@
+import random
+
+even = range(2, 13, 2)
+odd = range(1, 13, 2)
+
+dice1 = random.randint(1,6)
+dice2 = random.randint(1, 6)
+sum = dice1 + dice2
+
+
+def cho_han(guess):
+    if guess == even and sum == even:
+        return 'You won!'
+    elif guess == odd and sum == odd:
+        return 'You lost!'
+
+
+
+
+
+
+
+#print(dice1)
+#print(dice2)
+#print(sum)
+
+print(cho_han(odd))
+
+
+
+
